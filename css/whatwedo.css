@@ -129,3 +129,34 @@
 .detail h6{
     color: #bbb;
 }
+
+/* our-service style */
+.our-service{
+    margin-top: 100px;
+    background-color: #f6f6f6;
+}
+
+.main-service{
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+.sub-service{
+    background-color: white;
+    /* height: 200px; */
+    margin: 3px;
+    -webkit-box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
+    -moz-box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
+    box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
+}
+.sub-service:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
+.sub-service h5{
+    margin-top: 50px;
+    padding: 20px;
+}
+.sub-service p{
+    padding: 10px;
+}

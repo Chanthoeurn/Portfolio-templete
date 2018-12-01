@@ -1,0 +1,41 @@
+.product h3{
+    margin-top: 100px;
+}
+.color1
+{
+	background: #f6f6f6;
+	height: 160px;
+}
+.color2
+{
+	background: #ffffff;
+}
+.color2 h2{
+	text-align: center;
+}
+input[type=text] {
+    border: none;
+	border-bottom: 0.5px solid #000000;
+	width: 100%;
+    margin-bottom: 50px;
+    outline: none;
+    
+}
+
+/* btn load more style */
+.btn-loadMore{
+    width: 200px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    
+   
+}
+
+.btn-loadMore:hover{
+    text-decoration: none;
+    background-color: #e62c24;
+    color: white;
+
+}

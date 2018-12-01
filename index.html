@@ -73,10 +73,10 @@
         <div class="row">
             <div class="submenu">
                 <ul class="text-center">
-                    <li><a href="#" class="isActive">Home</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About</a></li>
-                    <li class="border-none"><a href="#">Contacts</a></li>
+                    <li><a href="#" id="typeAll">Home</a></li>
+                    <li><a href="#" id="type1">Products</a></li>
+                    <li><a href="#" id="type2">About</a></li>
+                    <li><a href="#" id="type3">Contacts</a></li>
                 </ul>
             </div>
         </div>
@@ -85,9 +85,9 @@
         <!-- <h1 class="text-center">BOOTSTAP PRODUCT GRID</h1> -->
         <!-- <hr> -->
 
-        <div class="row">
-            <!-- profile -->
-            <div class="col-md-4 product-grid">
+        <div class="row typeItems">
+        
+            <!-- <div class="col-md-4 product-grid">
                 <div class="image">
                     <a href="#">
                         <img src="images/thoeurn.jpg" alt="" class="w-100">
@@ -101,7 +101,7 @@
                
                 
             </div>
-             <!-- profile -->
+         
              <div class="col-md-4 product-grid">
                 <div class="image">
                     <a href="#">
@@ -116,7 +116,7 @@
                
                 
             </div>
-             <!-- profile -->
+            
              <div class="col-md-4 product-grid">
                 <div class="image">
                     <a href="#">
@@ -131,7 +131,7 @@
                
                 
             </div>
-             <!-- profile -->
+       
              <div class="col-md-4 product-grid">
                 <div class="image">
                     <a href="#">
@@ -146,7 +146,7 @@
                
                 
             </div>
-             <!-- profile -->
+   
              <div class="col-md-4 product-grid">
                 <div class="image">
                     <a href="#">
@@ -161,7 +161,7 @@
                
                 
             </div>
-             <!-- profile -->
+           
              <div class="col-md-4 product-grid">
                 <div class="image">
                     <a href="#">
@@ -175,7 +175,7 @@
                 </div>
                
                 
-            </div>
+            </div> -->
 
         </div>
     </div>
@@ -234,5 +234,115 @@
         })
     
     </script>
+    
+    <script>
 
+        let lists = [
+                {
+                    "type":1,
+                    "title":"Hello World 1",  
+                    "image":"images/thoeurn.jpg"
+                },
+                {
+                    "type":2,
+                    "title":"Hello World 2",  
+                    "image":"images/black.png"
+                },
+                {
+                    "type":3,
+                    "title":"Hello World 3",  
+                    "image":"images/blue.png"
+                },
+                {
+                    "type":1,
+                    "title":"Hello World 4",  
+                    "image":"images/thoeurn.jpg"
+                },
+                {
+                    "type":2,
+                    "title":"Hello World 5",  
+                    "image":"images/black.png"
+                },
+                {
+                    "type":3,
+                    "title":"Hello World 6",  
+                    "image":"images/blue.png"
+                },
+                {
+                    "type":1,
+                    "title":"Hello World 7",  
+                    "image":"images/thoeurn.jpg"
+                },
+                {
+                    "type":2,
+                    "title":"Hello World 8",  
+                    "image":"images/black.png"
+                }                            
+            ];
+
+        $(document).ready(function(){
+         
+            //Render All elements on page load event
+            renderFilterType(0)
+            
+            $('#typeAll').click(function(){
+                renderFilterType(0)     
+                // $('#typeAll').addClass('isActive');       
+            });
+
+            $('#type1').click(function(){
+                console.log('Type 1')
+                renderFilterType(1);
+                // $('#type1').addClass('isActive');
+            });
+
+            $('#type2').click(function(){
+                console.log('Type 2')                
+                renderFilterType(2);
+            });
+
+            $('#type3').click(function(){
+                console.log('Type 3')
+                renderFilterType(3);
+            });
+
+            function renderFilterType(_type){
+                
+               $('.typeItems').html('') //Clear main-container
+
+                if(_type == 0){
+                    //display all elements
+                    $.each(lists,function(key,value){
+                        renderElement(value);
+                    });
+                }else{
+                    $.each(lists,function(key,value){
+                        if(value["type"] == _type){
+                            renderElement(value);
+                        }
+                    });
+                }                
+            }
+
+            function renderElement(item){
+                $(".typeItems").append(
+                    '<div class="col-md-4 product-grid">'+
+                        '<div class="image">'+
+                            ' <a href="#">'+
+                                    '<img src="'+item["image"]+'" class="w-100">'+
+                            '</a>'+
+                            ' <ul class="socail-icon">'+
+                            '<li>'+item["title"]+'</li>'+
+                            '</ul>'+
+                        '</div>'+
+                    '</div>'
+                );
+            }
+
+            
+
+
+        });
+       
+    </script>
 </html>
