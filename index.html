@@ -25,7 +25,7 @@
 
         <div class="collapse navbar-collapse  " id="navbarsExampleDefault">
             
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 main-menu ">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">HOME
@@ -62,9 +62,11 @@
             <div class="socail-under-banner ">
                 <ul>
                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+               
                 </ul>
             </div>
         </div>
@@ -73,10 +75,10 @@
         <div class="row">
             <div class="submenu">
                 <ul class="text-center">
-                    <li><a href="#" id="typeAll">Home</a></li>
-                    <li><a href="#" id="type1">Products</a></li>
-                    <li><a href="#" id="type2">About</a></li>
-                    <li><a href="#" id="type3">Contacts</a></li>
+                    <!-- <li><a href="#" id="typeAll">Home</a></li> -->
+                    <li><a href="#" id="typeAll">ALL</a></li>
+                    <li><a href="#" id="type1">GRAPHIC DESIGN</a></li>
+                    <li><a href="#" id="type2">VIDEOS</a></li>
                 </ul>
             </div>
         </div>
@@ -187,32 +189,33 @@
     </div>
 	<div class="footer">
 		<div class="container">
-			<div class="book text-left"><a href="#"><h2>Book Stores</h2></a></div>
+			<div class="book text-left"><a href="#"><h2>BRANDBODIA</h2></a></div>
 			<hr style="width: 30px; border:2px solid gray; margin: 0px;">
              <br>
             <div class="row">
-				<div class="col-md-4">
-					<p class="text-left">Here is our social profile links.</p>
+				<div class="col-md-6">
+					<p class="text-left" style="font-size:14px;">HERE IS OUR SOCIAL PROFILE LINKS.</p>
 					<div class="social text-left">
 						<ul>
 							<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-							<li><a href="#"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
 						</ul>
 					</div>
 
 					<div class="m-footer">
 						<ul class="text-left">
 							<li><a href="#">Home</a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">About</a></li>
-							<li class="border-none"><a href="#">Contacts</a></li>
+							<li><a href="#">WHAT WE DO</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                            <li><a href="#">CLIENTS</a></li>
+							<li class="border-none"><a href="#">CONTACT US</a></li>
 						</ul>
 					</div>
 
 					<div class="copy_right">
-						<p class="text-left">All copyright © by SLS Generation 19th 2015-2019</p>
+						<p class="text-left">All copyright © reserved by BRANDBODIA 2018</p>
 					</div>
 				</div>
 			
@@ -249,7 +252,7 @@
                     "image":"images/black.png"
                 },
                 {
-                    "type":3,
+                    "type":1,
                     "title":"Hello World 3",  
                     "image":"images/blue.png"
                 },
@@ -264,7 +267,7 @@
                     "image":"images/black.png"
                 },
                 {
-                    "type":3,
+                    "type":2,
                     "title":"Hello World 6",  
                     "image":"images/blue.png"
                 },
@@ -299,11 +302,6 @@
             $('#type2').click(function(){
                 console.log('Type 2')                
                 renderFilterType(2);
-            });
-
-            $('#type3').click(function(){
-                console.log('Type 3')
-                renderFilterType(3);
             });
 
             function renderFilterType(_type){

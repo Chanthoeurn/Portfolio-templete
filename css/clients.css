@@ -2,6 +2,10 @@
     margin-top: 100px;
 }
 
+@font-face {
+    font-family: Futumd;
+    src: url(/fonts/futumd.ttf);
+}
 
 /* submenu style */
 .submenu{
@@ -90,7 +94,7 @@
      left: 0;
      width: 100%;
      height: 100%;
-     transition: 0.5s;
+     transition: 0.2s;
      z-index: 2;
      /* border: 2px solid #f9f9f9; */
 }
@@ -114,13 +118,14 @@
     width: 100%;
 }
 .description a{
+    font-family: Futumd;
     position: relative;
     text-decoration: none;
     display: block;   
     width: 100%;
     font-weight: bold;
-    font-size: 15px;
-    line-height: 80px;
+    font-size: 14px;
+    line-height: 60px;
     text-align: center;
     padding-left:10px;
     color: #404041;

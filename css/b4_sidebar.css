@@ -2,11 +2,31 @@ body{
     position:relative;
     /* color:red; */
 }
+
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(/fonts/OpenSans-Semibold.ttf);
+}
+@font-face {
+    font-family: Futumd;
+    src: url(/fonts/futumd.ttf);
+}
 /* style company name */
 .companyname{
     color: #e62c24;
     padding: 0;
+   
 }
+.navbar-brand{
+    color: #000;
+    font-family: Montserrat;
+}
+
 .overlay,.sideMenu{
     position:fixed;
     bottom:0
@@ -17,6 +37,27 @@ body{
 -moz-box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
 box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
     height: 80px;
+}
+
+/* main menu style */
+.main-menu ul li{
+    /* float: left; */
+    padding: 1px 10px;
+    position: relative;
+    text-align: center;
+}
+.main-menu ul li:hover:before {
+	content :"";
+	position: absolute;
+	width: 30%;
+	height: 1px;
+	background: red;
+	bottom: 0;
+	left: 0;
+	margin-left: 20px;
+}
+.main-menu ul li a:focus{
+	color: red;
 }
 
 /* customized style slide */
@@ -66,6 +107,7 @@ box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
 .banner{
     margin-top: 80px;
     letter-spacing: 5px;
+    font-family: Futumd;
 }
 .title-banner{
     color: #e62c24;
@@ -125,9 +167,10 @@ box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
 }
 .submenu ul li a{
     text-decoration: none;
-	font-size: 12px;
+	font-size: 14px;
 	opacity: 1;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    font-family: OpenSans;
 }
 .isActive{
     color: #e62c24;
@@ -172,7 +215,9 @@ box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
     font-size: 30px;
 }
 ul li a{
+    font-size: 12px;
     color: #404041;
+    font-family: OpenSans;
 }
 ul li a:hover{
     color: #e62c24;
@@ -210,7 +255,8 @@ ul li a:hover{
 	width: 100%;
 }
 .footer a{
-	color: #000;
+    color: #000;
+    font-family:Montserrat ;
 }
 .footer a:hover{
 	text-decoration: none;
@@ -257,8 +303,9 @@ ul li a:hover{
 }
 .m-footer ul li a{
 	font-size: 11px;
-	opacity: .5;
-	text-transform: uppercase;
+	opacity: 1;
+    text-transform: uppercase;
+    font-family: OpenSans;
 }
 .border-none{
 	border-right: 0 !important
@@ -266,7 +313,9 @@ ul li a:hover{
 
 .copy_right{
 	float: left;
-	padding-top: 15px;	
+    padding-top: 15px;	
+    font-size: 14px;
+    font-family: OpenSans;
 }
 
 /* items style */
@@ -328,7 +377,8 @@ hr{
     display: block;
     /* width: 50px; */
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: Futumd;
     height: 50px;
     line-height: 50px;
     text-align: center;
@@ -342,6 +392,7 @@ hr{
 .socail-icon li:hover{
     color:#e62c24;
     cursor: pointer;
+    
   
 }
 

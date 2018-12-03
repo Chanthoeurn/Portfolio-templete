@@ -1,6 +1,26 @@
 .product h5{
     margin-top: 100px;
+    font-family: OpenSans;
+    
 }
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(/fonts/OpenSans-Semibold.ttf);
+}
+@font-face {
+    font-family: OpenSansR;
+    src: url(/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Futumd;
+    src: url(/fonts/futumd.ttf);
+}
+
 /* team style */
 
 /* product-grid */
@@ -20,6 +40,13 @@
     
 }
 
+.col-md-4 h2{
+    font-family: Futumd;
+}
+
+.col-md-8 p{
+    font-family: OpenSansR;
+}
 .product-grid{
     /* padding-bottom: 20px;
     padding-top: 20px; */
@@ -42,6 +69,7 @@
      height: 100%;
      transition: 0.3s;
      z-index: 2;
+     font-family: OpenSans;
 }
 .image img{
     transition: 0.5s;
@@ -156,7 +184,10 @@
 .sub-service h5{
     margin-top: 50px;
     padding: 20px;
+    font-family: Futumd;
 }
 .sub-service p{
     padding: 10px;
+    opacity: 0.7;
+    font-family: OpenSansR;
 }
