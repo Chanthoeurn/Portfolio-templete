@@ -15,6 +15,10 @@ body{
     src: url(/fonts/futumd.ttf);
 }
 
+.Active{
+	color: #e62c24;
+	text-decoration: none;
+}
 
 /* style company name */
 

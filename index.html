@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="css/textstyle.css"> -->
     <script src="js/typed.min.js"></script>
-    <title>Document</title>
+    <title>HOME</title>
 </head>
 <body>
     <nav class="navbar menubar fixed-top navbar-expand-md navbar-white bg-white sidebarNavigation bg-company-red" data-sidebarClass="navbar-dark bg-dark">
@@ -28,21 +28,21 @@
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 main-menu ">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">HOME
+                        <a class="nav-link isActive" href="#">HOME
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">WHAT WE DO</a>
+                        <a class="nav-link" href="whatwedo.html">WHAT WE DO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PORTFOLIO</a>
+                        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CLIENTS</a>
+                        <a class="nav-link" href="client.html">CLIENTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="contact.html">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -181,7 +181,7 @@
 
 	<div class="container">
         <div class="d-flex justify-content-center">
-            <a href="#" class="btn-loadMore align-middle">Load More</a>
+            <a href="portfolio.html" class="btn-loadMore align-middle">LOAD MORE</a>
         </div>
     </div>
     <div class="line">
@@ -207,10 +207,10 @@
 					<div class="m-footer">
 						<ul class="text-left">
 							<li><a href="#">Home</a></li>
-							<li><a href="#">WHAT WE DO</a></li>
-                            <li><a href="#">PORTFOLIO</a></li>
-                            <li><a href="#">CLIENTS</a></li>
-							<li class="border-none"><a href="#">CONTACT US</a></li>
+							<li><a href="whatwedo.html">WHAT WE DO</a></li>
+                            <li><a href="portfolio.html">PORTFOLIO</a></li>
+                            <li><a href="client.html">CLIENTS</a></li>
+							<li class="border-none"><a href="contact.html">CONTACT US</a></li>
 						</ul>
 					</div>
 
@@ -221,7 +221,7 @@
 			
 			</div>
 		</div>
-	</div>
+    </div>
 
     <!-- link style and script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -230,7 +230,8 @@
 </body>
     <script>
         var typed = new Typed('.type', {   
-            strings:["BRANDBODIA.","DESIGNER.","DEVELOPERS."],
+            strings:["BRANDBODIA.","CONSULTANTS.","DEVELOPERS.","DESIGNERS."
+            ,"VIDEOGRAPHERS.","PHOTOGRAPHERS.","PROGRAMMERS."],
             typeSpeed: 40,
             backSpeed:40,
             loop: true,
@@ -243,44 +244,35 @@
         let lists = [
                 {
                     "type":1,
-                    "title":"Hello World 1",  
-                    "image":"images/thoeurn.jpg"
+                    "title":"ANGKOR SANKRANTE",  
+                    "image":"images/client-sub/as sub.png"
                 },
                 {
                     "type":2,
-                    "title":"Hello World 2",  
-                    "image":"images/black.png"
+                    "title":"BANG",  
+                    "image":"images/client-sub/bang sub.png"
                 },
                 {
                     "type":1,
-                    "title":"Hello World 3",  
-                    "image":"images/blue.png"
+                    "title":"BRANDBODIA",  
+                    "image":"images/client-sub/brandbodia sub.png"
                 },
                 {
                     "type":1,
-                    "title":"Hello World 4",  
-                    "image":"images/thoeurn.jpg"
+                    "title":"CAMBODIA COMMUNICATION INSTITUTE",  
+                    "image":"images/client-sub/cci sub.png"
                 },
                 {
                     "type":2,
-                    "title":"Hello World 5",  
-                    "image":"images/black.png"
+                    "title":"CAMBODIAN UNIVERSITY FOR SPECIALITIES",  
+                    "image":"images/client-sub/cus sub.png"
                 },
                 {
                     "type":2,
-                    "title":"Hello World 6",  
-                    "image":"images/blue.png"
-                },
-                {
-                    "type":1,
-                    "title":"Hello World 7",  
-                    "image":"images/thoeurn.jpg"
-                },
-                {
-                    "type":2,
-                    "title":"Hello World 8",  
-                    "image":"images/black.png"
-                }                            
+                    "title":"ROYAL UNIVERSITY OF PHNOM PENH",  
+                    "image":"images/client-sub/rupp sub.png"
+                }
+                                   
             ];
 
         $(document).ready(function(){

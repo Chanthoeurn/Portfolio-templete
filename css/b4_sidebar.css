@@ -108,6 +108,7 @@ box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
     margin-top: 80px;
     letter-spacing: 5px;
     font-family: Futumd;
+    font-size: 40px;
 }
 .title-banner{
     color: #e62c24;
@@ -174,7 +175,7 @@ box-shadow: 0px 5px 20px -3px rgba(207,207,207,1);
 }
 .isActive{
     color: #e62c24;
-    border-bottom: 2px solid #e62c24;
+    /* border-bottom: 1.5px solid #e62c24; */
 }
 .submenu ul li a:hover{
     color: #e62c24;
@@ -229,6 +230,8 @@ ul li a:hover{
     padding: 10px 20px;
     background-color: #404041;
     color: white;
+    font-family: Futumd;
+    font-size: 12px;
     
    
 }

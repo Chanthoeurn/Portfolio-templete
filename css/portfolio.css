@@ -1,5 +1,23 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(/fonts/OpenSans-Semibold.ttf);
+}
+@font-face {
+    font-family: OpenSansR;
+    src: url(/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Futumd;
+    src: url(/fonts/futumd.ttf);
+}
 .product h5{
     margin-top: 100px;
+    font-family: OpenSans;
 }
 
 
@@ -101,7 +119,7 @@
 }
 .product-grid:hover .image img, .description{
     /* opacity: 0.3; */
-    transform: scale(1.01);
+    transform: scale(1.03);
 }
 
 .description{
@@ -112,6 +130,7 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    font-family: Futumd;
 }
 .description a{
     position: relative;
@@ -161,7 +180,7 @@
     bottom: 0;
     z-index: 100;
     margin-bottom: 5%;
-    margin-left: 4%;
+    margin-left: 3%;
 }
 
 

@@ -1,5 +1,24 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(/fonts/OpenSans-Semibold.ttf);
+}
+@font-face {
+    font-family: OpenSansR;
+    src: url(/fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Futumd;
+    src: url(/fonts/futumd.ttf);
+}
 .product h3{
     margin-top: 100px;
+    font-family: OpenSans;
+    font-size: 25px;
 }
 .color1
 {
@@ -11,7 +30,8 @@
 	background: #ffffff;
 }
 .color2 h2{
-	text-align: center;
+    text-align: center;
+    font-family: Futumd;
 }
 input[type=text] {
     border: none;
@@ -19,6 +39,8 @@ input[type=text] {
 	width: 100%;
     margin-bottom: 50px;
     outline: none;
+    font-family: OpenSansR;
+    opacity: 0.7;
     
 }
 
